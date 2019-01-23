@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class TrackServiceImpl implements TrackService {
     private TrackRepository trackRepository;
-
+    @Autowired
     public TrackServiceImpl(TrackRepository trackRepository) {
         this.trackRepository = trackRepository;
     }
